@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "HelloSchematics",
+    "title": "Api Module Schema",
+    "type":"object",
+    "description": "Generate Api Module",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of script",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt": "Api entity name?"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

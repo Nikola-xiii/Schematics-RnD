@@ -3,7 +3,8 @@
   "schematics": {
     "api-module": {
       "description": "A blank schematic.",
-      "factory": "./api-module/index#apiModule"
+      "factory": "./api-module/index#apiModule",
+      "schema": "./api-module/schema.json"
     }
   }
 }
