@@ -9,7 +9,6 @@ export function apiModule(_options: any): Rule {
     const sourceTpl = url('./templates');
     const sourceParamsTpl = apply(sourceTpl, [template({ ..._options, ...strings})]);
     console.log(tree);
-    
     return mergeWith(sourceParamsTpl);
   };
 }
